@@ -353,6 +353,7 @@ img {
 /* Sign up section */
 
 .sign-up {
+    font-family: "Open Sans", "Arial", sans-serif;
     min-width: 336px;
     max-width: 863px;
     margin-left: auto;
@@ -365,6 +366,7 @@ img {
 }
 
 .sign-up-heading {
+    font-family: "Raleway", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     margin-top: 0;
