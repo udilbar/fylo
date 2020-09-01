@@ -199,3 +199,17 @@ img {
 .services-item-text {
     margin: 0;
 }
+
+/* Productiveness */
+
+.productiveness {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -57px;
+}
+
+.productiveness-img {
+    display: inline-block;
+    margin-left: 57px;
+}
