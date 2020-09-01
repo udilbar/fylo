@@ -411,8 +411,9 @@ img {
 }
 
 .sign-up-btn {
+    width: 280px;
     display: inline-block;
-    padding: 16px 72px;
+    padding: 16px 0;
     font-size: 14px;
     line-height: 16px;
     border: none;
