@@ -354,9 +354,9 @@ img {
 .sign-up-section {
     background-color: #1B2330;
     background-image: linear-gradient(
-        to top,
-        #0B1524 216px,
-        #1B2330 216px
+    to top,
+    #0B1524 216px,
+    #1B2330 216px
     );
     padding-bottom: 40px;
 }
@@ -447,13 +447,13 @@ img {
     .sign-up-input {
         margin-bottom: 0;
     }
-
+    
     .sign-up-section {
         background-color: #1B2330;
         background-image: linear-gradient(
-            to top,
-            #0B1524 144px,
-            #1B2330 144px
+        to top,
+        #0B1524 144px,
+        #1B2330 144px
         );
     }
 }
@@ -463,6 +463,7 @@ img {
 .fylo-footer {
     padding-top: 36px;
     background-color: #0B1524;
+    padding-bottom: 46px;
 }
 
 .fylo-footer-logo {
@@ -516,16 +517,60 @@ img {
     margin-bottom: 80px;
 }
 
-.link-item {
+.links-list a {
     display: flex;
     align-items: center;
-}
-
-.links-list a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.link-item-tel {
+.link-item a::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
+.link-item-tel {
+    margin-bottom: 19px;
+}
+
+.link-item-tel::before {
+    background-image: url("../img/phone.svg");
+}
+
+.link-item-email::before {
+    background-image: url("../img/email.svg");
+}
+
+.about-us-list {
+    margin-bottom: 48px;
+}
+
+.about-us-item:not(:last-child),
+.contact-us-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.about-us-link,
+.contact-us-link {
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.social-media-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -11px;
+}
+
+.social-media-item {
+    margin-left: 11px;
 }
