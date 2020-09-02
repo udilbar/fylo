@@ -278,6 +278,8 @@ img {
 /* Blockquote */
 
 .blockquote-list {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,9 +291,19 @@ img {
     text-align: left;
 }
 
+.blockquote-list::before {
+    font-family: "Nunito Sans", "Arial", sans-serif;
+    content: "“";
+    position: absolute;
+    z-index: -1;
+    left: 65px;
+    top: -7px;
+    color: #62E0D9;
+    font-size: 80px;
+    line-height: 50px;
+}
+
 .blockquote-item {
-    position: relative;
-    z-index: 50;
     width: 280px;
     padding: 24px 20px;
     background: #202A3C;
@@ -299,19 +311,6 @@ img {
     border-radius: 3.93258px;
     margin-bottom: 24px;
     margin-left: 40px;
-}
-
-.blockquote-item:first-child::before {
-    font-family: "Nunito Sans", "Arial", sans-serif;
-    content: "“";
-    position: absolute;
-    z-index: -1;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 116px/2 - 29.5px);
-    color: #62E0D9;
-    font-size: 80px;
-    line-height: 50px;
 }
 
 .blockquote {
@@ -352,15 +351,23 @@ img {
 
 /* Sign up section */
 
+.sign-up-section {
+    background-color: #1B2330;
+    background-image: linear-gradient(
+        to top,
+        #0B1524 216px,
+        #1B2330 216px
+    );
+    padding-bottom: 40px;
+}
+
 .sign-up {
-    font-family: "Open Sans", "Arial", sans-serif;
     min-width: 336px;
     max-width: 863px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 76px;
+    font-family: "Open Sans", "Arial", sans-serif;
     padding: 40px 28px 37px;
-    background: #1B2330;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
     border-radius: 9px;
 }
@@ -413,7 +420,7 @@ img {
 .sign-up-btn {
     width: 280px;
     display: inline-block;
-    padding: 16px 0;
+    padding: 16px 32px;
     font-size: 14px;
     line-height: 16px;
     border: none;
@@ -432,7 +439,93 @@ img {
 
 @media screen and (min-width: 851px) {
     .sign-up-input {
-        margin-bottom: 0;
         margin-right: 29px;
     }
+}
+
+@media screen and (min-width: 885px) {
+    .sign-up-input {
+        margin-bottom: 0;
+    }
+
+    .sign-up-section {
+        background-color: #1B2330;
+        background-image: linear-gradient(
+            to top,
+            #0B1524 144px,
+            #1B2330 144px
+        );
+    }
+}
+
+/* FOOTER */
+
+.fylo-footer {
+    padding-top: 36px;
+    background-color: #0B1524;
+}
+
+.fylo-footer-logo {
+    display: block;
+    width: 176px;
+    height: 52px;
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    font-family: "Open Sans", "Arial", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-address {
+    position: relative;
+    z-index: 1;
+    width: 320px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 41px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.footer-address::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 5px;
+    width: 13px;
+    height: 18px;
+    background-image: url("../img/place.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footer-content ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.links-list {
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+}
+
+.links-list a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-item-tel {
+
 }
