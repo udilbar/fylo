@@ -1,11 +1,11 @@
-<svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M31.1925 15.5C31.1925 23.8037 24.4114 30.5408 16.0396 30.5408C7.66778 30.5408 0.88673 23.8037 0.88673 15.5C0.88673 7.1963 7.66778 0.459178 16.0396 0.459178C24.4114 0.459178 31.1925 7.1963 31.1925 15.5Z" stroke="#DFE4F0" stroke-width="0.918357"/>
-<rect x="8.69275" y="8.20581" width="14.6937" height="14.5882" fill="url(#pattern0)"/>
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="8" width="16" height="15">
-<rect x="8.69275" y="8.20581" width="14.6937" height="14.5882" fill="url(#pattern1)"/>
+<svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.4335 13.5C27.4335 20.7352 21.5547 26.602 14.301 26.602C7.04724 26.602 1.16846 20.7352 1.16846 13.5C1.16846 6.26479 7.04724 0.397955 14.301 0.397955C21.5547 0.397955 27.4335 6.26479 27.4335 13.5Z" stroke="#DFE4F0" stroke-width="0.795909"/>
+<rect x="7.93372" y="7.14697" width="12.7345" height="12.7059" fill="url(#pattern0)"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="7" width="14" height="13">
+<rect x="7.93372" y="7.14697" width="12.7345" height="12.7059" fill="url(#pattern1)"/>
 </mask>
 <g mask="url(#mask0)">
-<rect x="8.69275" y="8.20581" width="14.6937" height="14.5882" fill="white"/>
+<rect x="7.93372" y="7.14697" width="12.7345" height="12.7059" fill="white"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
